@@ -1,19 +1,11 @@
 import { ReactNode, useState } from "react";
-import {
-  AppShell,
-  Header,
-  Footer,
-  Text,
-  MediaQuery,
-  Burger,
-  useMantineTheme,
-} from "@mantine/core";
+import { AppShell, useMantineTheme } from "@mantine/core";
 import HeaderNavigation from "../components/HeaderNavigation";
 
 var mainLinks = [
   {
     link: "#",
-    label: "About me",
+    label: "Welcome",
   },
   {
     link: "#",

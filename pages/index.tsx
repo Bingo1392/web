@@ -41,7 +41,7 @@ const useStyles = createStyles((theme) => ({
     fontFamily: `Greycliff CF, ${theme.fontFamily}`,
     fontWeight: 900,
     lineHeight: 1.05,
-    maxWidth: 500,
+    maxWidth: 530,
     fontSize: 48,
 
     [theme.fn.smallerThan("md")]: {
@@ -88,9 +88,9 @@ function About() {
                 variant="gradient"
                 gradient={{ from: "red", to: "yellow" }}
               >
-                fully featured
+                thorough developer
               </Text>{" "}
-              React components library
+              with focus on detail
             </Title>
 
             <Text className={classes.description} mt={30}>
@@ -107,7 +107,7 @@ function About() {
               className={classes.control}
               mt={40}
             >
-              Get started
+              Get in touch
             </Button>
           </div>
         </div>
