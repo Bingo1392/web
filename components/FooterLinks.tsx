@@ -4,14 +4,13 @@ import {
   Container,
   ActionIcon,
   Group,
+  Image,
 } from "@mantine/core";
 import {
-  IconBrandTwitter,
   IconBrandInstagram,
   IconBrandLinkedin,
   IconBrandFacebook,
 } from "@tabler/icons";
-import { useRouter } from "next/router";
 
 const FooterData: FooterLinksProps = {
   data: [
@@ -83,7 +82,7 @@ const FooterData: FooterLinksProps = {
 
 const useStyles = createStyles((theme) => ({
   footer: {
-    marginTop: 120,
+    marginTop: 40,
     paddingTop: theme.spacing.xl * 2,
     paddingBottom: theme.spacing.xl * 2,
     backgroundColor:
@@ -96,7 +95,7 @@ const useStyles = createStyles((theme) => ({
   },
 
   logo: {
-    maxWidth: 200,
+    maxWidth: 60,
 
     [theme.fn.smallerThan("sm")]: {
       display: "flex",
@@ -106,8 +105,9 @@ const useStyles = createStyles((theme) => ({
   },
 
   description: {
-    marginTop: 5,
-
+    maxWidth: 200,
+    marginTop: theme.spacing.lg,
+    textAlign: "justify",
     [theme.fn.smallerThan("sm")]: {
       marginTop: theme.spacing.xs,
       textAlign: "center",
@@ -181,6 +181,12 @@ const useStyles = createStyles((theme) => ({
       marginTop: theme.spacing.xs,
     },
   },
+
+  logoWrapper: {
+    display: "flex",
+    flexDirection: "column",
+    alignItems: "center",
+  },
 }));
 
 interface FooterLinksProps {
@@ -193,7 +199,6 @@ interface FooterLinksProps {
 export default function FooterLinks() {
   const { classes } = useStyles();
   const data = FooterData.data;
-  const router = useRouter();
 
   const groups = data.map((group) => {
     const links = group.links.map((link, index) => (
@@ -219,10 +224,10 @@ export default function FooterLinks() {
   return (
     <footer className={classes.footer}>
       <Container className={classes.inner}>
-        <div className={classes.logo}>
-          <Text size={30}>Moje Logo</Text>
+        <div className={classes.logoWrapper}>
+          <Image src={"/logo.svg"} className={classes.logo} />
           <Text size="xs" color="dimmed" className={classes.description}>
-            Build fully functional accessible web applications faster than ever
+            Be smart not hasty
           </Text>
         </div>
         <div className={classes.groups}>{groups}</div>
@@ -236,7 +241,7 @@ export default function FooterLinks() {
           <ActionIcon
             size="lg"
             onClick={() => {
-              router.push("https://www.linkedin.com/in/jan-zitnik/");
+              window.open("https://www.linkedin.com/in/jan-zitnik/", "_ blank");
             }}
           >
             <IconBrandLinkedin size={18} stroke={1.5} />
@@ -244,7 +249,7 @@ export default function FooterLinks() {
           <ActionIcon
             size="lg"
             onClick={() => {
-              router.push("https://www.instagram.com/bingo1392/");
+              window.open("https://www.instagram.com/bingo1392/", "_ blank");
             }}
           >
             <IconBrandInstagram size={18} stroke={1.5} />
@@ -252,7 +257,7 @@ export default function FooterLinks() {
           <ActionIcon
             size="lg"
             onClick={() => {
-              router.push("https://www.facebook.com/bingo1392/");
+              window.open("https://www.facebook.com/bingo1392/", "_ blank");
             }}
           >
             <IconBrandFacebook size={18} stroke={1.5} />

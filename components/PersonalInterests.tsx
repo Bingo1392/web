@@ -49,6 +49,7 @@ const useStyles = createStyles((theme) => ({
   },
 
   itemIcon: {
+    variant: "light",
     padding: theme.spacing.xs,
     marginRight: theme.spacing.md,
   },
