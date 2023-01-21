@@ -1,7 +1,8 @@
 import Profile from "@/components/Profile";
-import { createStyles, Container, Title, Text, Button } from "@mantine/core";
+import { createStyles } from "@mantine/core";
 import Hero from "@/components/Hero";
 import FeaturesCards from "@/components/FeaturesCards";
+import FooterLinks from "@/components/FooterLinks";
 
 const useStyles = createStyles((theme) => ({
   hero: {},
@@ -10,6 +11,10 @@ const useStyles = createStyles((theme) => ({
     display: "flex",
     justifyContent: "center",
     padding: theme.spacing.md,
+    marginTop: theme.spacing.xl,
+  },
+
+  services: {
     marginTop: theme.spacing.xl,
   },
 }));
@@ -24,8 +29,11 @@ function About() {
       <div className={classes.profile}>
         <Profile />
       </div>
-      <div>
+      <div className={classes.services}>
         <FeaturesCards />
+      </div>
+      <div>
+        <FooterLinks />
       </div>
     </>
   );

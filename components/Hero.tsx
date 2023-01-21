@@ -1,4 +1,5 @@
 import { createStyles, Container, Title, Text, Button } from "@mantine/core";
+import { useRouter } from "next/router";
 
 const useStyles = createStyles((theme) => ({
   root: {
@@ -74,6 +75,7 @@ const useStyles = createStyles((theme) => ({
 
 function Hero() {
   const { classes } = useStyles();
+  const router = useRouter();
   return (
     <div className={classes.root}>
       <Container size="lg">
@@ -103,6 +105,9 @@ function Hero() {
               radius={"lg"}
               className={classes.control}
               mt={40}
+              onClick={() => {
+                router.push("https://www.linkedin.com/in/jan-zitnik/");
+              }}
             >
               Get in touch
             </Button>

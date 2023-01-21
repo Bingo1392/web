@@ -8,26 +8,30 @@ import {
   SimpleGrid,
   Container,
 } from "@mantine/core";
-import { IconGauge, IconUser, IconCookie } from "@tabler/icons";
+import { IconYinYang, IconShieldCheck, IconTie } from "@tabler/icons";
 
 const mockdata = [
   {
-    title: "Extreme performance",
+    title: "User Experience",
     description:
-      "This dust is actually a powerful poison that will even make a pro wrestler sick, Regice cloaks itself with frigid air of -328 degrees Fahrenheit",
-    icon: IconGauge,
+      "I achieve the perfect user experience by combining the " +
+      "responsiveness of the environment and adapting the " +
+      "content to the size of the client device.",
+    icon: IconYinYang,
   },
   {
-    title: "Privacy focused",
+    title: "Security",
     description:
-      "People say it can run at the same speed as lightning striking, Its icy body is so cold, it will not melt even if it is immersed in magma",
-    icon: IconUser,
+      "I use the latest technologies and patterns in " +
+      "development to achieve maximum security for your data.",
+    icon: IconShieldCheck,
   },
   {
-    title: "No third parties",
+    title: "Professional approach",
     description:
-      "They’re popular, but they’re rare. Trainers who show them off recklessly may be targeted by thieves",
-    icon: IconCookie,
+      "Firstly I do a detailed analysis of the problem " +
+      "than I propose an ideal solution. ",
+    icon: IconTie,
   },
 ];
 
@@ -97,12 +101,12 @@ export default function FeaturesCards() {
     <Container size="lg" py="xl">
       <Group position="center">
         <Badge variant="filled" size="lg">
-          Best company ever
+          What I do
         </Badge>
       </Group>
 
       <Title order={2} className={classes.title} align="center" mt="sm">
-        Integrate effortlessly with any technology stack
+        Web apps with modern and secure technologies.
       </Title>
 
       <Text
@@ -111,8 +115,9 @@ export default function FeaturesCards() {
         align="center"
         mt="md"
       >
-        Every once in a while, you’ll see a Golbat that’s missing some fangs.
-        This happens when hunger drives it to try biting a Steel-type Pokémon.
+        I&apos;m focusing on javascript. I create applications mainly in React
+        and Next.js, which combines the possibilities of backend applications
+        with frontend.
       </Text>
 
       <SimpleGrid
