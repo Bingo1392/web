@@ -7,9 +7,23 @@ import {
   Group,
   Burger,
   MediaQuery,
-  Button,
 } from "@mantine/core";
 import { useDisclosure } from "@mantine/hooks";
+
+const mainLinks = [
+  {
+    link: "/",
+    label: "Welcome",
+  },
+  {
+    link: "/cv",
+    label: "CV",
+  },
+  {
+    link: "/contact",
+    label: "contact",
+  },
+];
 
 const useStyles = createStyles((theme) => ({
   header: {
@@ -18,7 +32,7 @@ const useStyles = createStyles((theme) => ({
     padding: "0px !important",
     display: "flex",
     justifyContent: "space-between",
-    backdropFilter: "blur(5px)",
+    backdropFilter: "blur(10px)",
   },
 
   inner: {
@@ -80,16 +94,7 @@ const useStyles = createStyles((theme) => ({
   },
 }));
 
-interface LinkProps {
-  label: string;
-  link: string;
-}
-
-interface DoubleHeaderProps {
-  mainLinks: LinkProps[];
-}
-
-export default function HeaderNavigation({ mainLinks }: DoubleHeaderProps) {
+export default function HeaderNavigation() {
   const [opened, { toggle }] = useDisclosure(false);
   const { classes, cx } = useStyles();
   const [active, setActive] = useState(0);

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg width="182px" height="222px" viewBox="0 0 182 222" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <rect width="182" height="222" id="artboard_1" />
+    <clipPath id="clip_1">
+      <use xlink:href="#artboard_1" clip-rule="evenodd" />
+    </clipPath>
+  </defs>
+  <g id="logo" clip-path="url(#clip_1)">
+    <g id="Group" transform="translate(10 -37)" artboard="ede35cf4-a5ed-4cde-b1ad-6816ee846245">
+      <path d="M1 208L1 48" id="Line" fill="none" fill-rule="evenodd" stroke="#FFFFFF" stroke-width="20" stroke-linecap="round" />
+      <path d="M161 208L161 48" id="Line-2" fill="none" fill-rule="evenodd" stroke="#FFFFFF" stroke-width="20" stroke-linecap="round" />
+      <path d="M1 48L161 48" id="Line-3" fill="none" fill-rule="evenodd" stroke="#FFFFFF" stroke-width="20" stroke-linecap="round" />
+      <path d="M1 208L81 248" id="Line-4" fill="none" fill-rule="evenodd" stroke="#FFFFFF" stroke-width="20" stroke-linecap="round" />
+      <path d="M81 248L161 208" id="Line-5" fill="none" fill-rule="evenodd" stroke="#FFFFFF" stroke-width="20" stroke-linecap="round" />
+      <g id="J" fill="#FFFFFF" transform="translate(3 0)">
+        <path d="M75.312 57.528L75.312 124.776Q75.312 141.912 66.024 150.984Q56.736 160.056 40.464 160.056Q23.184 160.056 12.888 150.408Q2.592 140.76 2.592 122.616L30.528 122.616Q30.672 134.568 39.312 134.568Q47.088 134.568 47.088 124.776L47.088 57.528L75.312 57.528Z" />
+      </g>
+      <g id="Z" fill="#FFFFFF" transform="translate(70.5 48)">
+        <path d="M38.88 136.152L81.072 136.152L81.072 159.048L7.2 159.048L7.2 137.592L48.96 80.28L7.2 80.28L7.2 57.528L81.072 57.528L81.072 78.984L38.88 136.152Z" />
+      </g>
+      <path d="M116 88L101 78" id="Line-6" fill="none" fill-rule="evenodd" stroke="#FFFFFF" stroke-width="16" stroke-linecap="round" />
+      <path d="M116 88L131 78" id="Line-7" fill="none" fill-rule="evenodd" stroke="#FFFFFF" stroke-width="16" stroke-linecap="round" />
+    </g>
+  </g>
+</svg>
