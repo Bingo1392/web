@@ -3,6 +3,7 @@ import { createStyles } from "@mantine/core";
 import Hero from "@/components/Hero";
 import FeaturesCards from "@/components/FeaturesCards";
 import FooterLinks from "@/components/FooterLinks";
+import PersonalInterests from "@/components/PersonalInterests";
 
 const useStyles = createStyles((theme) => ({
   hero: {},
@@ -31,6 +32,9 @@ function About() {
       </div>
       <div className={classes.services}>
         <FeaturesCards />
+      </div>
+      <div>
+        <PersonalInterests />
       </div>
       <div>
         <FooterLinks />
