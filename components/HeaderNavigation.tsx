@@ -18,7 +18,7 @@ const useStyles = createStyles((theme) => ({
     padding: "0px !important",
     display: "flex",
     justifyContent: "space-between",
-    backdropFilter: "blur(5px)",
+    backdropFilter: "blur(10px)",
   },
 
   inner: {
