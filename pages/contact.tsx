@@ -26,9 +26,7 @@ function Contact() {
     <>
       <Container size={"md"} className={classes.container}>
         <Group className={classes.contactGroup} grow>
-          <div>
-            <Contacts />
-          </div>
+          <Contacts />
           <EventTimeline />
         </Group>
       </Container>

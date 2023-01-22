@@ -16,7 +16,7 @@ import {
 import Link from "next/link";
 import { useRouter } from "next/router";
 
-const FooterData: FooterLinksProps = {
+export const FooterData: FooterLinksProps = {
   data: [
     {
       title: "Work together",
@@ -167,7 +167,7 @@ interface FooterLinksProps {
   }[];
 }
 
-export default function FooterLinks() {
+export function FooterGroupsLinks() {
   const { classes } = useStyles();
   const data = FooterData.data;
   const router = useRouter();
@@ -198,6 +198,11 @@ export default function FooterLinks() {
       </div>
     );
   });
+  return <>{groups}</>;
+}
+
+export default function FooterLinks() {
+  const { classes } = useStyles();
 
   return (
     <footer className={classes.footer}>
@@ -208,7 +213,9 @@ export default function FooterLinks() {
             Be smart not hasty
           </Text>
         </div>
-        <div className={classes.groups}>{groups}</div>
+        <div className={classes.groups}>
+          <FooterGroupsLinks />
+        </div>
       </Container>
       <Container className={classes.afterFooter}>
         <Text color="dimmed" size="sm">

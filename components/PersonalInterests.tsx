@@ -123,7 +123,9 @@ export default function PersonalInterests() {
         <Text weight={700} size="lg" className={classes.itemTitle}>
           {item.title}
         </Text>
-        <Text color="dimmed">{item.description}</Text>
+        <Text color="dimmed" align={"justify"}>
+          {item.description}
+        </Text>
       </div>
     </div>
   ));

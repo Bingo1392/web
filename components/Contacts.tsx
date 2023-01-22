@@ -1,4 +1,11 @@
-import { createStyles, ThemeIcon, Text, Box, Stack } from "@mantine/core";
+import {
+  createStyles,
+  ThemeIcon,
+  Text,
+  Box,
+  Stack,
+  Title,
+} from "@mantine/core";
 import { IconPhone, IconMapPin, IconAt } from "@tabler/icons";
 import { RedRobotCard } from "@/components/RedRobotCard";
 
@@ -130,10 +137,13 @@ export default function Contacts() {
 
   return (
     <div className={classes.wrapper}>
+      <Title order={4} align={"center"}>
+        Best way to work with me
+      </Title>
       <Text
         color="dimmed"
         className={classes.description}
-        align="center"
+        align="justify"
         mt="md"
       >
         I am a co-founder of Red Robot s.r.o. and together with colleagues we

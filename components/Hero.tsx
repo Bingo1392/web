@@ -34,6 +34,9 @@ const useStyles = createStyles((theme) => ({
     [theme.fn.smallerThan("md")]: {
       marginRight: 0,
     },
+    [theme.fn.smallerThan("sm")]: {
+      textAlign: "center",
+    },
   },
 
   title: {

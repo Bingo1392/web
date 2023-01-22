@@ -85,7 +85,7 @@ export default function Profile() {
           <Text weight={500} size="lg" mb={5}>
             Co-founder & Software developer
           </Text>
-          <Text size="sm" color="dimmed">
+          <Text size="sm" color="dimmed" align={"justify"}>
             Software developer with more than 8 years of experience in web
             application development. I have experience both in expanding and
             maintaining long-standing large applications, as well as in the

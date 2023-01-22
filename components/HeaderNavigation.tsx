@@ -11,6 +11,7 @@ import {
 import { useDisclosure } from "@mantine/hooks";
 import Link from "next/link";
 import { useRouter } from "next/router";
+import DrawerMenu from "@/components/DrawerMenu";
 
 const mainLinks = [
   {
@@ -126,6 +127,7 @@ export default function HeaderNavigation() {
 
   return (
     <Header height={{ base: 50, md: 70 }} p="md" className={classes.header}>
+      <DrawerMenu opened={opened} setOpened={toggle} mainLinks={mainLinks} />
       <Container className={classes.inner}>
         <div className={classes.links}>
           <Group spacing={0} position="right" className={classes.mainLinks}>
