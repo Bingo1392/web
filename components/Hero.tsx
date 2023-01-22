@@ -106,7 +106,7 @@ function Hero() {
               className={classes.control}
               mt={40}
               onClick={() => {
-                router.push("https://www.linkedin.com/in/jan-zitnik/");
+                router.push("/contact");
               }}
             >
               Get in touch

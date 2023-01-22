@@ -17,10 +17,10 @@ const mainLinks = [
     link: "/",
     label: "Welcome",
   },
-  {
-    link: "/cv",
-    label: "CV",
-  },
+  // {
+  //   link: "/cv",
+  //   label: "CV",
+  // },
   {
     link: "/contact",
     label: "contact",

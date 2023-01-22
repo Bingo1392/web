@@ -5,6 +5,7 @@ import {
   ActionIcon,
   Group,
   Image,
+  Button,
 } from "@mantine/core";
 import {
   IconBrandInstagram,
@@ -12,69 +13,33 @@ import {
   IconBrandFacebook,
   IconBrandGithub,
 } from "@tabler/icons";
+import Link from "next/link";
+import { useRouter } from "next/router";
 
 const FooterData: FooterLinksProps = {
   data: [
     {
-      title: "About",
+      title: "Work together",
       links: [
         {
-          label: "Features",
-          link: "#",
+          label: "Red Robot s.r.o.",
+          link: "https://www.redrobot.cz",
+          type: "external",
         },
         {
-          label: "Pricing",
-          link: "#",
-        },
-        {
-          label: "Support",
-          link: "#",
-        },
-        {
-          label: "Forums",
-          link: "#",
+          label: "Contact",
+          link: "/contact",
+          type: "internal",
         },
       ],
     },
     {
-      title: "Project",
+      title: "Resume",
       links: [
         {
-          label: "Contribute",
-          link: "#",
-        },
-        {
-          label: "Media assets",
-          link: "#",
-        },
-        {
-          label: "Changelog",
-          link: "#",
-        },
-        {
-          label: "Releases",
-          link: "#",
-        },
-      ],
-    },
-    {
-      title: "Community",
-      links: [
-        {
-          label: "Join Discord",
-          link: "#",
-        },
-        {
-          label: "Follow on Twitter",
-          link: "#",
-        },
-        {
-          label: "Email newsletter",
-          link: "#",
-        },
-        {
-          label: "GitHub discussions",
-          link: "#",
+          label: "CV_Zitnik.docx (draft)",
+          link: "CV_Zitnik.docx",
+          type: "download",
         },
       ],
     },
@@ -146,6 +111,8 @@ const useStyles = createStyles((theme) => ({
     fontSize: theme.fontSizes.sm,
     paddingTop: 3,
     paddingBottom: 3,
+    textDecoration: "none",
+    cursor: "pointer",
 
     "&:hover": {
       textDecoration: "underline",
@@ -192,22 +159,33 @@ const useStyles = createStyles((theme) => ({
 interface FooterLinksProps {
   data: {
     title: string;
-    links: { label: string; link: string }[];
+    links: {
+      label: string;
+      link: string;
+      type: "internal" | "external" | "download";
+    }[];
   }[];
 }
 
 export default function FooterLinks() {
   const { classes } = useStyles();
   const data = FooterData.data;
+  const router = useRouter();
 
   const groups = data.map((group) => {
     const links = group.links.map((link, index) => (
-      <Text<"a">
+      <Text
         key={index}
         className={classes.link}
-        component="a"
-        href={link.link}
-        onClick={(event) => event.preventDefault()}
+        onClick={() => {
+          if (link.type === "external") {
+            window.open(link.link, "_ blank");
+          } else if (link.type === "internal") {
+            router.push(link.link);
+          } else {
+            window.open(link.link);
+          }
+        }}
       >
         {link.label}
       </Text>
