@@ -1,0 +1,42 @@
+import { Container, createStyles, Group } from "@mantine/core";
+import Contacts from "@/components/Contacts";
+import EventTimeline from "@/components/EventTimeline";
+import FooterLinks from "@/components/FooterLinks";
+import { RedRobotCard } from "@/components/RedRobotCard";
+
+const useStyles = createStyles((theme) => ({
+  container: {
+    marginTop: theme.spacing.xl,
+    marginBottom: theme.spacing.xl,
+  },
+
+  contactGroup: {
+    justifyContent: "space-between",
+    alignItems: "flex-start",
+    [theme.fn.smallerThan("sm")]: {
+      flexDirection: "column",
+      alignItems: "center",
+    },
+  },
+}));
+
+function Contact() {
+  const { classes } = useStyles();
+  return (
+    <>
+      <Container size={"md"} className={classes.container}>
+        <Group className={classes.contactGroup} grow>
+          <div>
+            <Contacts />
+          </div>
+          <EventTimeline />
+        </Group>
+      </Container>
+      <div>
+        <FooterLinks />
+      </div>
+    </>
+  );
+}
+
+export default Contact;

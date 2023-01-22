@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import {
   createStyles,
   Header,
@@ -9,6 +9,8 @@ import {
   MediaQuery,
 } from "@mantine/core";
 import { useDisclosure } from "@mantine/hooks";
+import Link from "next/link";
+import { useRouter } from "next/router";
 
 const mainLinks = [
   {
@@ -70,6 +72,7 @@ const useStyles = createStyles((theme) => ({
   },
 
   mainLink: {
+    textDecoration: "none",
     textTransform: "uppercase",
     fontSize: theme.fontSizes.sm,
     color:
@@ -83,7 +86,6 @@ const useStyles = createStyles((theme) => ({
 
     "&:hover": {
       color: theme.colorScheme === "dark" ? theme.white : theme.black,
-      textDecoration: "none",
     },
   },
 
@@ -92,27 +94,34 @@ const useStyles = createStyles((theme) => ({
     borderBottomColor:
       theme.colors[theme.primaryColor][theme.colorScheme === "dark" ? 5 : 6],
   },
+
+  link: {
+    textDecoration: "none",
+  },
 }));
 
 export default function HeaderNavigation() {
   const [opened, { toggle }] = useDisclosure(false);
   const { classes, cx } = useStyles();
-  const [active, setActive] = useState(0);
+  const [active, setActive] = useState("/");
+  const router = useRouter();
+
+  useEffect(() => {
+    const currentPath = router.pathname;
+    console.log("currentPath", currentPath);
+    setActive(currentPath);
+  }, [router.pathname, setActive]);
 
   const mainItems = mainLinks.map((item, index) => (
-    <Anchor<"a">
+    <Link
       href={item.link}
       key={item.label}
       className={cx(classes.mainLink, {
-        [classes.mainLinkActive]: index === active,
+        [classes.mainLinkActive]: item.link === active,
       })}
-      onClick={(event) => {
-        event.preventDefault();
-        setActive(index);
-      }}
     >
       {item.label}
-    </Anchor>
+    </Link>
   ));
 
   return (

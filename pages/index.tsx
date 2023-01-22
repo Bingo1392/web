@@ -6,8 +6,6 @@ import FooterLinks from "@/components/FooterLinks";
 import PersonalInterests from "@/components/PersonalInterests";
 
 const useStyles = createStyles((theme) => ({
-  hero: {},
-
   profile: {
     display: "flex",
     justifyContent: "center",
@@ -24,7 +22,7 @@ function About() {
   const { classes } = useStyles();
   return (
     <>
-      <div className={classes.hero}>
+      <div>
         <Hero />
       </div>
       <div className={classes.profile}>

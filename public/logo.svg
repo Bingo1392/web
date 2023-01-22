@@ -1,26 +1,27 @@
 <?xml version="1.0" encoding="utf-8"?>
-<svg width="182px" height="222px" viewBox="0 0 182 222" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg">
+<svg width="222px" height="222px" viewBox="0 0 222 222" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg">
   <defs>
-    <rect width="182" height="222" id="artboard_1" />
+    <path d="M0 0L222 0L222 222L0 222L0 0Z" id="path_1" />
+    <rect width="222" height="222" id="artboard_1" />
     <clipPath id="clip_1">
       <use xlink:href="#artboard_1" clip-rule="evenodd" />
     </clipPath>
+    <clipPath id="clip_2">
+      <use xlink:href="#path_1" />
+    </clipPath>
   </defs>
-  <g id="logo" clip-path="url(#clip_1)">
-    <g id="Group" transform="translate(10 -37)" artboard="ede35cf4-a5ed-4cde-b1ad-6816ee846245">
-      <path d="M1 208L1 48" id="Line" fill="none" fill-rule="evenodd" stroke="#FFFFFF" stroke-width="20" stroke-linecap="round" />
-      <path d="M161 208L161 48" id="Line-2" fill="none" fill-rule="evenodd" stroke="#FFFFFF" stroke-width="20" stroke-linecap="round" />
-      <path d="M1 48L161 48" id="Line-3" fill="none" fill-rule="evenodd" stroke="#FFFFFF" stroke-width="20" stroke-linecap="round" />
-      <path d="M1 208L81 248" id="Line-4" fill="none" fill-rule="evenodd" stroke="#FFFFFF" stroke-width="20" stroke-linecap="round" />
-      <path d="M81 248L161 208" id="Line-5" fill="none" fill-rule="evenodd" stroke="#FFFFFF" stroke-width="20" stroke-linecap="round" />
-      <g id="J" fill="#FFFFFF" transform="translate(3 0)">
-        <path d="M75.312 57.528L75.312 124.776Q75.312 141.912 66.024 150.984Q56.736 160.056 40.464 160.056Q23.184 160.056 12.888 150.408Q2.592 140.76 2.592 122.616L30.528 122.616Q30.672 134.568 39.312 134.568Q47.088 134.568 47.088 124.776L47.088 57.528L75.312 57.528Z" />
+  <g id="logo2" clip-path="url(#clip_1)">
+    <g id="Group" artboard="d34f7eda-8442-4b78-bb9b-6fe21a3c72e3">
+      <g id="Rectangle-2">
+        <g clip-path="url(#clip_2)">
+          <use xlink:href="#path_1" fill="none" stroke="#FFFFFF" stroke-width="48" />
+        </g>
       </g>
-      <g id="Z" fill="#FFFFFF" transform="translate(70.5 48)">
-        <path d="M38.88 136.152L81.072 136.152L81.072 159.048L7.2 159.048L7.2 137.592L48.96 80.28L7.2 80.28L7.2 57.528L81.072 57.528L81.072 78.984L38.88 136.152Z" />
-      </g>
-      <path d="M116 88L101 78" id="Line-6" fill="none" fill-rule="evenodd" stroke="#FFFFFF" stroke-width="16" stroke-linecap="round" />
-      <path d="M116 88L131 78" id="Line-7" fill="none" fill-rule="evenodd" stroke="#FFFFFF" stroke-width="16" stroke-linecap="round" />
+      <path d="M10 111L212 111" id="Line" fill="none" fill-rule="evenodd" stroke="#FFFFFF" stroke-width="24" />
+      <path d="M111 111L111 10" id="Line-2" fill="none" fill-rule="evenodd" stroke="#FFFFFF" stroke-width="24" />
+      <path d="M212 111L111 212" id="Line-3" fill="none" fill-rule="evenodd" stroke="#FFFFFF" stroke-width="24" />
+      <path d="M147.679 54.4286L161.821 68.5708" id="Line-4" fill="none" fill-rule="evenodd" stroke="#FFFFFF" stroke-width="20" stroke-linecap="square" />
+      <path d="M162 68.1422L176.142 54" id="Line-5" fill="none" fill-rule="evenodd" stroke="#FFFFFF" stroke-width="20" stroke-linecap="square" />
     </g>
   </g>
 </svg>

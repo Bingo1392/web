@@ -33,7 +33,7 @@ const config = {
       title: "Co-founder and investor",
       description:
         "Everyone has to provide for themselves in old age. " +
-        "It is best to invest while you have plenty of energy.",
+        "It is the best to invest while you are young.",
     },
   ],
 };
