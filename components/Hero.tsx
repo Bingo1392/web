@@ -34,6 +34,9 @@ const useStyles = createStyles((theme) => ({
     [theme.fn.smallerThan("md")]: {
       marginRight: 0,
     },
+    [theme.fn.smallerThan("sm")]: {
+      textAlign: "center",
+    },
   },
 
   title: {
@@ -106,7 +109,7 @@ function Hero() {
               className={classes.control}
               mt={40}
               onClick={() => {
-                router.push("https://www.linkedin.com/in/jan-zitnik/");
+                router.push("/contact");
               }}
             >
               Get in touch

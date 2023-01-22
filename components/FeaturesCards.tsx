@@ -92,7 +92,7 @@ export default function FeaturesCards() {
       <Text size="lg" weight={500} className={classes.cardTitle} mt="md">
         {feature.title}
       </Text>
-      <Text size="sm" color="dimmed" mt="sm">
+      <Text size="sm" color="dimmed" mt="sm" align={"justify"}>
         {feature.description}
       </Text>
     </Card>

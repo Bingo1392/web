@@ -1,4 +1,11 @@
-import { Timeline, Text, Group, ActionIcon, createStyles } from "@mantine/core";
+import {
+  Timeline,
+  Text,
+  Group,
+  ActionIcon,
+  createStyles,
+  Title,
+} from "@mantine/core";
 import { IconExternalLink } from "@tabler/icons";
 import FormattedDate from "@/components/FormattedDate";
 
@@ -128,7 +135,7 @@ const data = [
 ];
 
 const useStyles = createStyles((theme) => ({
-  description: {
+  title: {
     marginBottom: theme.spacing.xl,
     "&::after": {
       content: '""',
@@ -189,14 +196,9 @@ export default function EventTimeline() {
 
   return (
     <div className={classes.wrapper}>
-      <Text
-        color="dimmed"
-        className={classes.description}
-        align="center"
-        mt="md"
-      >
+      <Title order={4} align={"center"} className={classes.title}>
         We could meet at one of the following events
-      </Text>
+      </Title>
       <Timeline color="red" reverseActive bulletSize={14} lineWidth={2}>
         {items}
       </Timeline>
