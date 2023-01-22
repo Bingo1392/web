@@ -10,6 +10,7 @@ import {
   IconBrandInstagram,
   IconBrandLinkedin,
   IconBrandFacebook,
+  IconBrandGithub,
 } from "@tabler/icons";
 
 const FooterData: FooterLinksProps = {
@@ -260,6 +261,14 @@ export default function FooterLinks() {
             }}
           >
             <IconBrandFacebook size={18} stroke={1.5} />
+          </ActionIcon>
+          <ActionIcon
+            size="lg"
+            onClick={() => {
+              window.open("https://github.com/Bingo1392", "_ blank");
+            }}
+          >
+            <IconBrandGithub size={18} stroke={1.5} />
           </ActionIcon>
         </Group>
       </Container>

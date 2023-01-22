@@ -1,5 +1,6 @@
 import { createStyles, ThemeIcon, Text, Box, Stack } from "@mantine/core";
 import { IconPhone, IconMapPin, IconAt } from "@tabler/icons";
+import { RedRobotCard } from "@/components/RedRobotCard";
 
 type ContactIconVariant = "white" | "gradient";
 
@@ -82,11 +83,6 @@ interface ContactIconsListProps {
 }
 
 const MOCKDATA = [
-  {
-    title: "Red Robot email",
-    description: "jan.zitnik@redrobot.cz",
-    icon: IconAt,
-  },
   { title: "Personal email", description: "mail@janzitnik.com", icon: IconAt },
   { title: "Phone", description: "+420 773 124 643", icon: IconPhone },
   { title: "Office", description: "Karlín, 186 00 Praha 8", icon: IconMapPin },
@@ -123,6 +119,10 @@ const useContactsStyles = createStyles((theme) => ({
       maxWidth: "none",
     },
   },
+
+  rrContainer: {
+    marginBottom: theme.spacing.xl,
+  },
 }));
 
 export default function Contacts() {
@@ -136,9 +136,14 @@ export default function Contacts() {
         align="center"
         mt="md"
       >
-        Every once in a while, you’ll see a Golbat that’s missing some fangs.
-        This happens when hunger drives it to try biting a Steel-type Pokémon.
+        I am a co-founder of Red Robot s.r.o. and together with colleagues we
+        deliver software services to our customers. If you are interested in
+        establishing cooperation, contact our company through official channels.
+        For other purposes contact me directly.
       </Text>
+      <div className={classes.rrContainer}>
+        <RedRobotCard />
+      </div>
       <Box
         sx={(theme) => ({
           padding: theme.spacing.xl,

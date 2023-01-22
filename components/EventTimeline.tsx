@@ -195,8 +195,7 @@ export default function EventTimeline() {
         align="center"
         mt="md"
       >
-        Every once in a while, you’ll see a Golbat that’s missing some fangs.
-        This happens when hunger drives it to try biting a Steel-type Pokémon.
+        We could meet at one of the following events
       </Text>
       <Timeline color="red" reverseActive bulletSize={14} lineWidth={2}>
         {items}

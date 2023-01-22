@@ -2,6 +2,7 @@ import { Container, createStyles, Group } from "@mantine/core";
 import Contacts from "@/components/Contacts";
 import EventTimeline from "@/components/EventTimeline";
 import FooterLinks from "@/components/FooterLinks";
+import { RedRobotCard } from "@/components/RedRobotCard";
 
 const useStyles = createStyles((theme) => ({
   container: {
@@ -25,7 +26,9 @@ function Contact() {
     <>
       <Container size={"md"} className={classes.container}>
         <Group className={classes.contactGroup} grow>
-          <Contacts />
+          <div>
+            <Contacts />
+          </div>
           <EventTimeline />
         </Group>
       </Container>
