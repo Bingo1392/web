@@ -1,13 +1,14 @@
 import path from "path";
 import { promises as fs } from "fs";
 import yaml from "js-yaml";
+import dayjs from "dayjs";
 
 export type TimelineItem = {
+  from?: string;
+  to?: string;
   title: string;
   subtitle?: string;
   description?: string;
-  from?: string;
-  to?: string;
 };
 
 export type Language = {
@@ -16,35 +17,58 @@ export type Language = {
 };
 
 export type Project = {
-  title: string;
-  description: string;
-  myRole: string;
+  name: string;
+  projectDescription: string;
+  positionDescription: string;
+  role: string;
   from: string;
-  to: string;
+  to?: string;
   technologies: string[];
 };
 
 export type Resume = {
-  fullname: string;
-  label: string;
+  fullName: string;
+  title: string;
   description: string;
-  education: TimelineItem[];
-  experience: TimelineItem[];
   skills: string[];
   languages: Language[];
+  education: TimelineItem[];
+  workExperience: TimelineItem[];
   projects: Project[];
+};
+
+export type FileGeneration = {
+  template: string;
+  dataReference: string;
+  fileName: string;
 };
 
 export type Config = {
   resume: Resume;
-};
+  generateFiles: FileGeneration[];
+} & { [p: string]: any };
 
-export async function getConfig() {
-  const configDirectory = path.join(process.cwd(), "../data");
+export async function getConfig(): Promise<Config> {
+  const configDirectory = path.join(process.cwd(), "./data");
   const fileContent = await fs.readFile(
     configDirectory + "/config.yaml",
     "utf8"
   );
   const data = yaml.load(fileContent);
   return data as Config;
+}
+
+export function dateFormatter(date: any) {
+  return dayjs(date).format("MM/YYYY");
+}
+
+export function transformDateValuesInNestedObject(obj: { [p: string]: any }) {
+  Object.keys(obj).forEach((key) => {
+    if (obj[key] instanceof Date) {
+      obj[key] = dateFormatter(obj[key]);
+    }
+    if (typeof obj[key] === "object" && obj[key] !== null) {
+      transformDateValuesInNestedObject(obj[key]);
+    }
+  });
 }

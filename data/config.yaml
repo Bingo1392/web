@@ -1,3 +1,176 @@
 resume:
-  fullname: 'Jan Žitník'
-  label: ''
+  fullName: Jan Žitník
+  web: https://www.janzitnik.com
+  title: Javascript developer
+  description: Software developer with more than 8 years of experience in web application development. I have experience both in expanding and maintaining long-standing large applications, as well as in the delivery of new solutions. I focus on ease of use and a friendly user experience.
+  skills:
+    - React
+    - Typescript
+    - Next.js
+    - Javascript
+    - Node.js
+    - JSS
+    - CSS
+    - REST
+    - GraphQL
+    - jQuery
+    - Redux
+    - Angular
+    - AngularJS
+    - PostgreSQL
+    - Git
+  languages:
+    - lang: Czech
+      level: C2
+    - lang: English
+      level: B2
+  education:
+    - from: 2011-01-01
+      to: 2014-01-01
+      title: Czech Technical University in Prague
+      subtitle: Software engineering
+      description: Ended without degree
+    - from: 2006-01-01
+      to: 2011-01-01
+      title: SPŠE Plzeň
+      subtitle: Information technology
+      description: Ended with matriculation examination
+  workExperience:
+    - from: 2020-05-01
+      title: Frontend developer
+      subtitle: Red Robot s.r.o.
+      description: As a senior frontend developer, I build modern applications from the ground up together with my colleagues. Our frontend is based on React, while the backend is based on Java. At the same time, I help newcomers learn and I manage their work on some projects.
+    - from: 2016-11-01
+      to: 2020-06-01
+      title: Web Applications developer
+      subtitle: Physter Technology, a.s.
+      description: A great long-term collaboration that has moved me a step further. As a developer, analyst and architect, I worked on a customization of product focused on a complete lifecycle of software development management. This included work on modules like project management, testing, service desk and others. Then I worked on the creation of an frontend framework written in React, whose role was to increase the quality and speed up the delivery of web solutions.
+    - from: 2014-05-01
+      to: 2016-06-01
+      title: Application programmer
+      subtitle: ASP a.s.
+      description: Great first experience with real professionals. My role was to develop new features and fix bugs on a long-standing and well-established product which was focused on property and facility management. I also cooperated in new product development created to manage warehouses. I got acquainted with SQL, Delphi, Angular and other technologies.
+  projects:
+    - name: Business Monitoring
+      role: Lead frontend developer
+      from: 2023-01-01
+      projectDescription: A dynamic system for creating user interfaces. Business Monitoring was chosen as the first implementation - that is, an application for a management view of APIs that are exposed across the corporation. In addition, this view displays relations between business entities such as API, business service, environments etc.
+      positionDescription: Creation of a dynamic engine that can create a web application based on a configuration file.
+      technologies:
+        - Next.js
+        - React
+        - Typescript
+        - Mantine
+        - REST
+        - zustand
+    - name: Scaut
+      role: Lead frontend developer
+      from: 2020-07-01
+      to: 2022-08-01
+      projectDescription: A system for screening employees and job applicants with a connection to state-managed APIs.
+      positionDescription: Creation of a general library and 3 related frontend applications.
+      technologies:
+        - React
+        - Typescript
+        - Javascript
+        - Chakra-UI
+        - Webpack
+        - Rollup
+        - Redux
+        - GraphQL
+    - name: WHP a Centrála
+      role: Frontend developer
+      from: 2021-01-01
+      to: 2021-03-01
+      projectDescription: These are 2 systems for administrative access to setting up servers, shared hosting, databases and others. Customer support has access to these tools and can solve customer problems operatively.
+      positionDescription: Help with product support - bug fixes and minor development.
+      technologies:
+        - Angular
+        - SCSS
+    - name: Zákaznické centrum
+      role: Frontend developer
+      from: 2021-01-01
+      to: 2021-03-01
+      projectDescription: System for setting up customer services such as payments, invoicing, domains, hosting, etc.
+      positionDescription: Help with product support - bug fixes and minor development.
+      technologies:
+        - AngularJS
+        - SCSS
+    - name: eWallet
+      role: Lead frontend developer
+      from: 2020-07-01
+      to: 2020-09-01
+      projectDescription: POC of a custom blockchain, currency and crypto wallet built on the Stratis Platform. The application is written as a PWA and is therefore installable on most devices.
+      positionDescription: Configuration of the Stratis Platform and creation of a crypto wallet that can be installed on mobile devices and PCs.
+      technologies:
+        - PWA
+        - React
+        - Typescript
+        - Styled Components
+        - Redux
+    - name: System in automotive industry
+      role: Frontend developer
+      from: 2020-06-01
+      to: 2020-08-01
+      projectDescription: Internal system for warhouse and supply management.
+      positionDescription: Help with bug fixes and minor development.
+      technologies:
+        - Angular
+        - SCSS
+    - name: Gemini
+      role: Frontend developer
+      from: 2018-01-01
+      to: 2020-06-01
+      projectDescription: An internal framework written in React for creating user interfaces.
+      positionDescription: Implementation of the npm package of configurable GUI components.
+      technologies:
+        - React
+        - Typescript
+        - Javascript
+        - JSS
+        - Webpack
+        - Jest
+    - name: Conclusion
+      role: Fullstack developer
+      from: 2016-09-01
+      projectDescription: Modular system for process control. The delivered solutions include modules such as Service Desk, Project Management, Test Management, Asset Management and others.
+      positionDescription: Creation of complex solutions or modules for IT process management. Automation of the required processes from requirements gathering to project planning, tracking and task processing. Creation of new previews using Javascript (FE and BE) and XML. Creation of new REST integrations to communicate with other customer applications.
+      technologies:
+        - jQuery
+        - Javascript
+        - HTML
+        - SCSS
+        - PostgreSQL
+    - name: GT HelpDesk
+      role: Fullstack developer
+      from: 2016-01-01
+      to: 2016-06-01
+      projectDescription: Service desk for controlling processes with a direct impact on the quality of sales.
+      positionDescription: Creation of the administrative part of the web application from the DB design, through the BE logic to the FE application - MVC architecture.
+      technologies:
+        - Delphi
+        - MSSQL
+        - AngularJS
+        - CSS
+        - HTML
+        - Javascript
+    - name: GT Solution
+      role: Fullstack developer
+      from: 2014-05-01
+      to: 2016-01-01
+      projectDescription: Modular system for managing buildings, land, development projects, shopping centers and other cadastral objects.
+      positionDescription: Development of user interface and application logic through the Builder framework. Optimization and creation of database queries.
+      technologies:
+        - Object Pascal
+        - MSSQL
+        - PL/SQL
+        - SVN
+        - XML
+        - HTML
+generateFiles:
+  - template: cv.docx
+    dataReference: resume
+    fileName: cv_Jan_Zitnik.docx
+  - template: cv_print.docx
+    dataReference: resume
+    fileName: cv_Jan_Zitnik_print.docx
