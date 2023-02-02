@@ -109,7 +109,6 @@ export default function HeaderNavigation() {
 
   useEffect(() => {
     const currentPath = router.pathname;
-    console.log("currentPath", currentPath);
     setActive(currentPath);
   }, [router.pathname, setActive]);
 
