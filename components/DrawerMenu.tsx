@@ -1,14 +1,26 @@
 import { useRouter } from "next/router";
 import { FooterGroupsLinks } from "@/components/FooterLinks";
-import { Navbar, createStyles, Drawer, Stack, Button } from "@mantine/core";
+import {
+  createStyles,
+  Drawer,
+  Stack,
+  Button,
+  ActionIcon,
+  Group,
+} from "@mantine/core";
+import { IconX } from "@tabler/icons";
 
 const useStyles = createStyles((theme) => ({
-  navbar: {
-    justifyContent: "space-between",
+  header: {
+    padding: theme.spacing.lg,
+  },
+
+  links: {
+    paddingTop: theme.spacing.xl,
   },
 
   footer: {
-    margin: theme.spacing.lg,
+    padding: theme.spacing.lg,
     textAlign: "center",
   },
 }));
@@ -45,17 +57,38 @@ export default function DrawerMenu({
 
   return (
     <>
-      <Drawer opened={opened} onClose={() => setOpened(false)}>
-        <Navbar className={classes.navbar}>
-          <Navbar.Section>
-            <Stack spacing={0}>{links}</Stack>
-          </Navbar.Section>
-          <Navbar.Section className={classes.footer}>
-            <Stack justify={"center"} align={"center"}>
+      <Drawer
+        opened={opened}
+        onClose={() => setOpened(false)}
+        styles={(theme) => ({
+          header: {
+            display: "none",
+          },
+        })}
+      >
+        <Stack h={"100vh"}>
+          <Group className={classes.header} position={"right"}>
+            <ActionIcon
+              onClick={() => {
+                setOpened(false);
+              }}
+            >
+              <IconX size={18} />
+            </ActionIcon>
+          </Group>
+          <Stack h={"100%"} justify={"space-between"}>
+            <Stack spacing={0} className={classes.links}>
+              {links}
+            </Stack>
+            <Stack
+              className={classes.footer}
+              justify={"center"}
+              align={"center"}
+            >
               <FooterGroupsLinks />
             </Stack>
-          </Navbar.Section>
-        </Navbar>
+          </Stack>
+        </Stack>
       </Drawer>
     </>
   );
