@@ -22,6 +22,7 @@ const useStyles = createStyles((theme) => ({
   footer: {
     padding: theme.spacing.lg,
     textAlign: "center",
+    paddingBottom: theme.spacing.xl * 2,
   },
 }));
 
