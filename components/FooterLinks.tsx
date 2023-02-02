@@ -37,8 +37,13 @@ export const FooterData: FooterLinksProps = {
       title: "Resume",
       links: [
         {
-          label: "CV_Zitnik.docx (draft)",
-          link: "CV_Zitnik.docx",
+          label: "cv_Jan_Zitnik.docx",
+          link: "generated/cv_Jan_Zitnik.docx",
+          type: "download",
+        },
+        {
+          label: "cv_Jan_Zitnik_print.docx",
+          link: "generated/cv_Jan_Zitnik_print.docx",
           type: "download",
         },
       ],
