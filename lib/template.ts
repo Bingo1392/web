@@ -16,7 +16,7 @@ export async function populateWordTemplate(
       if (err) {
         return console.error(err);
       }
-      console.log("Directory created successfully!");
+      console.log(`Directory ${outputDirectory} created successfully!`);
     });
   }
   const fileContent = await fs.readFile(
