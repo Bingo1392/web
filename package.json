@@ -1,7 +1,7 @@
 {
   "name": "web",
-  "version": "1.0.0",
-  "private": true,
+  "version": "0.8.0",
+  "license": "MIT",
   "scripts": {
     "dev": "yarn prebuild && next dev",
     "build": "yarn prebuild && next build",
