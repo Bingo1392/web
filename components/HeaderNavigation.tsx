@@ -3,7 +3,6 @@ import {
   createStyles,
   Header,
   Container,
-  Anchor,
   Group,
   Burger,
   MediaQuery,
@@ -18,10 +17,10 @@ const mainLinks = [
     link: "/",
     label: "Welcome",
   },
-  // {
-  //   link: "/cv",
-  //   label: "CV",
-  // },
+  {
+    link: "/projects",
+    label: "Projects",
+  },
   {
     link: "/contact",
     label: "contact",

@@ -51,7 +51,9 @@ resume:
       subtitle: ASP a.s.
       description: Great first experience with real professionals. My role was to develop new features and fix bugs on a long-standing and well-established product which was focused on property and facility management. I also cooperated in new product development created to manage warehouses. I got acquainted with SQL, Delphi, Angular and other technologies.
   projects:
-    - name: Business Monitoring
+    - id: 10
+      systemType: Information system
+      name: Business Monitoring
       role: Lead frontend developer
       from: 2023-01-01
       projectDescription: A dynamic system for creating user interfaces. Business Monitoring was chosen as the first implementation - that is, an application for a management view of APIs that are exposed across the corporation. In addition, this view displays relations between business entities such as API, business service, environments etc.
@@ -63,7 +65,10 @@ resume:
         - Mantine
         - REST
         - zustand
-    - name: Scaut
+      thumbnail: noThumbnail.jpg
+    - id: 9
+      systemType: Pre-employment screening
+      name: Scaut
       role: Lead frontend developer
       from: 2020-07-01
       to: 2022-08-01
@@ -78,7 +83,10 @@ resume:
         - Rollup
         - Redux
         - GraphQL
-    - name: WHP a Centrála
+      thumbnail: noThumbnail.jpg
+    - id: 8
+      systemType: Information system
+      name: WHP a Centrála
       role: Frontend developer
       from: 2021-01-01
       to: 2021-03-01
@@ -87,7 +95,10 @@ resume:
       technologies:
         - Angular
         - SCSS
-    - name: Zákaznické centrum
+      thumbnail: jumanji.jpg
+    - id: 7
+      systemType: Customer's administration
+      name: Zákaznické centrum
       role: Frontend developer
       from: 2021-01-01
       to: 2021-03-01
@@ -96,7 +107,10 @@ resume:
       technologies:
         - AngularJS
         - SCSS
-    - name: eWallet
+      thumbnail: customer.jpg
+    - id: 6
+      systemType: PWA - crypto wallet
+      name: eWallet
       role: Lead frontend developer
       from: 2020-07-01
       to: 2020-09-01
@@ -108,7 +122,10 @@ resume:
         - Typescript
         - Styled Components
         - Redux
-    - name: System in automotive industry
+      thumbnail: ewallet.jpg
+    - id: 5
+      systemType: Information system
+      name: System in automotive industry
       role: Frontend developer
       from: 2020-06-01
       to: 2020-08-01
@@ -117,7 +134,10 @@ resume:
       technologies:
         - Angular
         - SCSS
-    - name: Gemini
+      thumbnail: angular.jpg
+    - id: 4
+      systemType: Component library
+      name: Gemini
       role: Frontend developer
       from: 2018-01-01
       to: 2020-06-01
@@ -130,7 +150,10 @@ resume:
         - JSS
         - Webpack
         - Jest
-    - name: Conclusion
+      thumbnail: react.jpg
+    - id: 3
+      systemType: Process management system
+      name: Conclusion
       role: Fullstack developer
       from: 2016-09-01
       projectDescription: Modular system for process control. The delivered solutions include modules such as Service Desk, Project Management, Test Management, Asset Management and others.
@@ -141,7 +164,10 @@ resume:
         - HTML
         - SCSS
         - PostgreSQL
-    - name: GT HelpDesk
+      thumbnail: conclusion.jpg
+    - id: 2
+      systemType: Service desk
+      name: GT HelpDesk
       role: Fullstack developer
       from: 2016-01-01
       to: 2016-06-01
@@ -154,7 +180,10 @@ resume:
         - CSS
         - HTML
         - Javascript
-    - name: GT Solution
+      thumbnail: makro.jpg
+    - id: 1
+      systemType: Information system
+      name: GT Solution
       role: Fullstack developer
       from: 2014-05-01
       to: 2016-01-01
@@ -167,6 +196,7 @@ resume:
         - SVN
         - XML
         - HTML
+      thumbnail: gtproducts.jpg
 generateFiles:
   - template: cv.docx
     dataReference: resume
