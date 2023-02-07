@@ -9,8 +9,7 @@ import {
 
 const useStyles = createStyles((theme) => ({
   container: {
-    marginTop: theme.spacing.xl,
-    marginBottom: theme.spacing.xl,
+    marginTop: theme.spacing.xl * 3,
   },
 }));
 
@@ -18,7 +17,7 @@ function Projects({ resume }: { resume: Resume }) {
   const { classes } = useStyles();
   return (
     <>
-      <Container size={"xl"}>
+      <Container size={"xl"} className={classes.container}>
         <ProjectsCards projects={resume.projects} />
       </Container>
       <div>

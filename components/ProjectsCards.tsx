@@ -48,12 +48,12 @@ export function ProjectsCards({ projects }: ProjectsCardsProps) {
   return (
     <div>
       <Container>
-        <Title className={classes.title}>My title</Title>
+        <Title className={classes.title}>Look what i did</Title>
       </Container>
 
       <Container size={560} p={0}>
         <Text size="sm" className={classes.description}>
-          My description
+          Some projects I made in work others are personal.
         </Text>
       </Container>
 
