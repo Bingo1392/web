@@ -21,19 +21,19 @@ const config = {
       image: "personalInterests/gaming.png",
       title: "PC gamer",
       description:
-        "I like to play online competitive and cooperative games with my friends",
+        "I like to play online competitive and cooperative games with my friends.",
     },
     {
       image: "personalInterests/coding.png",
       title: "Coder",
-      description: "It is best if you enjoy your work. Just like me.",
+      description: "It is the best if you enjoy your work. Just like me.",
     },
     {
       image: "personalInterests/money.png",
       title: "Co-founder and investor",
       description:
         "Everyone has to provide for themselves in old age. " +
-        "It is the best to invest while you are young.",
+        "That's the reason why it's important to invest young.",
     },
   ],
 };
