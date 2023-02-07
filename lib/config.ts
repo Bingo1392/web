@@ -17,6 +17,8 @@ export type Language = {
 };
 
 export type Project = {
+  id: number;
+  systemType: string;
   name: string;
   projectDescription: string;
   positionDescription: string;
@@ -24,6 +26,7 @@ export type Project = {
   from: string;
   to?: string;
   technologies: string[];
+  thumbnail: string;
 };
 
 export type Resume = {

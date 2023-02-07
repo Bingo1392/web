@@ -115,9 +115,9 @@ export default function FeaturesCards() {
         align="center"
         mt="md"
       >
-        I&apos;m focusing on javascript. I create applications mainly in React
-        and Next.js, which combines the possibilities of backend applications
-        with frontend.
+        I specialize in JavaScript development. I mainly create applications
+        using React and Next.js, which provides the benefits of both backend and
+        frontend development.
       </Text>
 
       <SimpleGrid

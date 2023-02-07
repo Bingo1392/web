@@ -146,7 +146,7 @@ export default function Contacts() {
         align="justify"
         mt="md"
       >
-        I am a co-founder of Red Robot s.r.o. and together with colleagues we
+        I am a co-founder of Red Robot s.r.o., and together with colleagues, we
         deliver software services to our customers. If you are interested in
         establishing cooperation, contact our company through official channels.
         For other purposes contact me directly.

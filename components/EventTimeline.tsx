@@ -197,7 +197,7 @@ export default function EventTimeline() {
   return (
     <div className={classes.wrapper}>
       <Title order={4} align={"center"} className={classes.title}>
-        We could meet at one of the following events
+        We could have met at one of these events
       </Title>
       <Timeline color="red" reverseActive bulletSize={14} lineWidth={2}>
         {items}

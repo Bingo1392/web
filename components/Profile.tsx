@@ -86,11 +86,11 @@ export default function Profile() {
             Co-founder & Software developer
           </Text>
           <Text size="sm" color="dimmed" align={"justify"}>
-            Software developer with more than 8 years of experience in web
-            application development. I have experience both in expanding and
-            maintaining long-standing large applications, as well as in the
-            delivery of new solutions. I focus on ease of use and a friendly
-            user experience.
+            I am a software developer with over 8 years of experience in web
+            application development. Throughout my career, I have gained
+            experience in both expanding and maintaining large, long-standing
+            applications, as well as delivering new solutions. My main focus is
+            on creating user-friendly experiences that are easy to use.
           </Text>
         </div>
         <Image src={image.src} className={classes.image} />
