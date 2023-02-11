@@ -1,14 +1,14 @@
 import { createStyles, Container, Title, Text, Button } from "@mantine/core";
 import { useRouter } from "next/router";
+import Image from "next/image";
+import background from "../public/background.jpg";
 
 const useStyles = createStyles((theme) => ({
   root: {
     height: "calc(100vh - 50px)",
-    backgroundImage: "url(background.jpg)",
-    backgroundSize: "cover",
-    backgroundPosition: "right 15% bottom calc(90%);",
     paddingTop: theme.spacing.xl * 3,
     paddingBottom: theme.spacing.xl * 3,
+    position: "relative",
   },
 
   inner: {
@@ -81,6 +81,17 @@ function Hero() {
   const router = useRouter();
   return (
     <div className={classes.root}>
+      <Image
+        alt="Background image"
+        src={background}
+        fill
+        quality={100}
+        style={{
+          zIndex: "-1",
+          objectFit: "cover",
+          objectPosition: "right 15% bottom calc(90%);",
+        }}
+      />
       <Container size="lg">
         <div className={classes.inner}>
           <div className={classes.content}>
