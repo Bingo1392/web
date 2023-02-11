@@ -1,13 +1,6 @@
-import {
-  createStyles,
-  Text,
-  Title,
-  TextInput,
-  Button,
-  Image,
-  Container,
-} from "@mantine/core";
-import image from "../public/profile.png";
+import { createStyles, Text, Title, Container } from "@mantine/core";
+import profile from "../public/profile.png";
+import Image from "next/image";
 
 const useStyles = createStyles((theme) => ({
   wrapper: {
@@ -29,16 +22,12 @@ const useStyles = createStyles((theme) => ({
     },
   },
 
-  image: {
-    maxWidth: "40%",
-
-    [`@media (max-width: ${theme.breakpoints.sm}px)`]: {
-      maxWidth: "100%",
-    },
-  },
-
   body: {
     paddingRight: theme.spacing.xl * 4,
+
+    [`@media (max-width: ${theme.breakpoints.md}px)`]: {
+      paddingRight: theme.spacing.xl * 2,
+    },
 
     [`@media (max-width: ${theme.breakpoints.sm}px)`]: {
       paddingRight: 0,
@@ -93,7 +82,12 @@ export default function Profile() {
             on creating user-friendly experiences that are easy to use.
           </Text>
         </div>
-        <Image src={image.src} className={classes.image} />
+        <Image
+          src={profile}
+          alt={"Jan Žitník's profile picture."}
+          width={220}
+          height={220}
+        />
       </div>
     </Container>
   );
