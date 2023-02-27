@@ -15,7 +15,9 @@ export default function App({ Component, pageProps }: AppProps) {
     };
 
     const handleRouteChangeComplete = () => {
-      setLoading(false);
+      setTimeout(() => {
+        setLoading(false);
+      }, 1000);
     };
 
     router.events.on("routeChangeStart", handleRouteChange);
