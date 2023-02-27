@@ -89,7 +89,7 @@ function Hero() {
         style={{
           zIndex: "-1",
           objectFit: "cover",
-          objectPosition: "right 15% bottom calc(90%);",
+          objectPosition: "right 15% bottom calc(90%)",
         }}
       />
       <Container size="lg">
