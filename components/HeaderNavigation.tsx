@@ -14,7 +14,7 @@ import DrawerMenu from "@/components/DrawerMenu";
 
 const mainLinks = [
   {
-    link: "/",
+    link: "/welcome",
     label: "Welcome",
   },
   // {
