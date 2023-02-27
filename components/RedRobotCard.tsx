@@ -1,10 +1,10 @@
 import { createStyles, Card, Overlay, Button, Text } from "@mantine/core";
+import rrPeople from "@/public/rr-people.jpg";
+import Image from "next/image";
 
 const useStyles = createStyles((theme) => ({
   card: {
     height: 240,
-    backgroundSize: "cover",
-    backgroundPosition: "center",
   },
 
   content: {
@@ -38,11 +38,17 @@ export function RedRobotCard() {
   const { classes, cx, theme } = useStyles();
 
   return (
-    <Card
-      radius="md"
-      style={{ backgroundImage: "url(rr-people.jpg)" }}
-      className={classes.card}
-    >
+    <Card radius="md" className={classes.card}>
+      <Image
+        alt="Red Robot crew image"
+        src={rrPeople}
+        fill
+        quality={100}
+        style={{
+          objectFit: "cover",
+          objectPosition: "right 15% bottom calc(90%)",
+        }}
+      />
       <div className={classes.content}>
         <Text size="lg" weight={700} className={classes.title}>
           Red Robot s.r.o.
