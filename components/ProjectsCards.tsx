@@ -6,7 +6,7 @@ import {
   createStyles,
 } from "@mantine/core";
 import { Project } from "@/lib/config";
-import { ImageCard } from "@/components/ImageCard";
+import { ProjectCard } from "@/components/ProjectCard";
 
 const useStyles = createStyles((theme) => ({
   title: {
@@ -37,12 +37,7 @@ interface ProjectsCardsProps {
 export function ProjectsCards({ projects }: ProjectsCardsProps) {
   const { classes, theme } = useStyles();
   const cards = projects?.map((project, index) => (
-    <ImageCard
-      key={project.id}
-      thumbnail={project.thumbnail}
-      name={project.name}
-      systemType={project.systemType}
-    />
+    <ProjectCard key={project.id} projectData={project} />
   ));
 
   return (
@@ -59,12 +54,9 @@ export function ProjectsCards({ projects }: ProjectsCardsProps) {
 
       <SimpleGrid
         mt={60}
-        cols={3}
-        spacing={theme.spacing.lg}
-        breakpoints={[
-          { maxWidth: 980, cols: 2, spacing: "xl" },
-          { maxWidth: 755, cols: 1, spacing: "xl" },
-        ]}
+        cols={2}
+        spacing={theme.spacing.xl}
+        breakpoints={[{ maxWidth: 900, cols: 1, spacing: "xl" }]}
       >
         {cards}
       </SimpleGrid>

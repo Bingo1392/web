@@ -1,7 +1,7 @@
 import { createStyles, Container, Title, Text, Button } from "@mantine/core";
 import { useRouter } from "next/router";
 import Image from "next/image";
-import background from "../public/background.jpg";
+import background from "../public/background.svg";
 
 const useStyles = createStyles((theme) => ({
   root: {

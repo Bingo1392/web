@@ -17,13 +17,13 @@ const mainLinks = [
     link: "/welcome",
     label: "Welcome",
   },
-  // {
-  //   link: "/projects",
-  //   label: "Projects",
-  // },
+  {
+    link: "/projects",
+    label: "Projects",
+  },
   {
     link: "/contact",
-    label: "contact",
+    label: "Contact",
   },
 ];
 
