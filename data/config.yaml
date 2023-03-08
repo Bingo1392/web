@@ -65,7 +65,7 @@ resume:
         - Mantine
         - REST
         - zustand
-      thumbnail: noThumbnail.jpg
+      thumbnail: bm.png
     - id: 9
       systemType: Pre-employment screening
       name: Scaut
@@ -83,7 +83,8 @@ resume:
         - Rollup
         - Redux
         - GraphQL
-      thumbnail: noThumbnail.jpg
+      thumbnail: scaut.png
+      web: https://scaut.com/
     - id: 8
       systemType: Information system
       name: WHP a Centrála
@@ -95,7 +96,7 @@ resume:
       technologies:
         - Angular
         - SCSS
-      thumbnail: jumanji.jpg
+      thumbnail: jumanji.png
     - id: 7
       systemType: Customer's administration
       name: Zákaznické centrum
@@ -107,7 +108,8 @@ resume:
       technologies:
         - AngularJS
         - SCSS
-      thumbnail: customer.jpg
+      thumbnail: customer.png
+      web: https://customer.active24.com/login
     - id: 6
       systemType: PWA - crypto wallet
       name: eWallet
@@ -122,7 +124,7 @@ resume:
         - Typescript
         - Styled Components
         - Redux
-      thumbnail: ewallet.jpg
+      thumbnail: ewallet.png
     - id: 5
       systemType: Information system
       name: System in automotive industry
@@ -134,7 +136,7 @@ resume:
       technologies:
         - Angular
         - SCSS
-      thumbnail: angular.jpg
+      thumbnail: angular.png
     - id: 4
       systemType: Component library
       name: Gemini
@@ -150,13 +152,13 @@ resume:
         - JSS
         - Webpack
         - Jest
-      thumbnail: react.jpg
+      thumbnail: react.png
     - id: 3
       systemType: Process management system
-      name: Conclusion
+      name: PRODiGi
       role: Fullstack developer
       from: 2016-09-01
-      projectDescription: Modular system designed for process control. The delivered solutions include modules such as Service Desk, Project Management, Test Management, Asset Management and others.
+      projectDescription: Modular system designed for process management. The delivered solutions include modules such as Service Desk, Project Management, Test Management, Asset Management and others.
       positionDescription: Delivering complex solutions for IT process management that involves automating processes, developing new views and modules, and creating REST integrations.
       technologies:
         - jQuery
@@ -164,7 +166,8 @@ resume:
         - HTML
         - SCSS
         - PostgreSQL
-      thumbnail: conclusion.jpg
+      thumbnail: conclusion.png
+      web: https://pro-digi.cz/
     - id: 2
       systemType: Service desk
       name: GT HelpDesk
@@ -180,7 +183,7 @@ resume:
         - CSS
         - HTML
         - Javascript
-      thumbnail: makro.jpg
+      thumbnail: makro.png
     - id: 1
       systemType: Information system
       name: GT Solution
@@ -196,7 +199,8 @@ resume:
         - SVN
         - XML
         - HTML
-      thumbnail: gtproducts.jpg
+      thumbnail: gtproducts.png
+      web: http://aspas.eu/index.php/topmenu-produkty/produkty-produkty
 generateFiles:
   - template: cv.docx
     dataReference: resume

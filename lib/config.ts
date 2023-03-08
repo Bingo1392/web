@@ -27,6 +27,7 @@ export type Project = {
   to?: string;
   technologies: string[];
   thumbnail: string;
+  web?: string;
 };
 
 export type Resume = {
